@@ -1,0 +1,22 @@
+.nav-bar {
+  position: fixed;
+  display: flex;
+  min-height: 5vh;
+  width: 100vw;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+
+  a {
+    display: flex;
+    width: 8vw;
+    text-decoration: none;
+    color: rgb(230, 230, 31);
+    text-shadow: 3px 3px black;
+  }
+
+  a:hover {
+    color: rgb(146, 146, 21);
+  }
+
+}
