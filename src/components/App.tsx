@@ -40,7 +40,7 @@ class App extends React.Component<Props, State> {
     return (
       <React.Fragment>
         <main >
-          <Navbar aboutId="about" />
+          <Navbar appsId="apps" gamesId="games" aboutId="about" />
           <FrontPage id="frontPage" className="frontpage-container" title={"Bittineuvos"} description={"It's all about the ones and zeros"} />
           <About id="about" className="about-container" />
         </main>
