@@ -1,5 +1,6 @@
 import React from 'react';
 import Canvas from './Canvas';
+import Navbar from './Navbar';
 import "../css/App.css";
 import "../css/Nav.css";
 
@@ -38,6 +39,7 @@ class App extends React.Component<Props, State> {
       rowCount: 50,
       columnCount: 125
     }
+
   }
 
   public componentDidMount() {
@@ -46,6 +48,7 @@ class App extends React.Component<Props, State> {
     setInterval(() => {
       this.updateMatrixArray();
     }, 500);
+
   }
 
   public updateMatrixArray = () => {
@@ -75,10 +78,7 @@ class App extends React.Component<Props, State> {
   public render() {
     return (
       <React.Fragment>
-        <nav className="nav-bar">
-          <a href="#apps">Apps</a>
-          <a href="#games">Games</a>
-        </nav>
+        <Navbar />
         <main >
           <Canvas
             matrixArray={this.state.matrixArray}
