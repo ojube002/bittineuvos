@@ -1,17 +1,23 @@
 import React from 'react';
 import "../css/Nav.css";
 
+/**
+ * Interface for props
+ */
+interface Props {
+    aboutId: string;
+}
 
-class Navbar extends React.Component {
-    
+class Navbar extends React.Component<Props> {
+
     /**
      * Render navbar component
      */
     public render() {
+        const { aboutId } = this.props;
         return (
             <nav className="nav-bar">
-                <a href="#apps">Apps</a>
-                <a href="#games">Games</a>
+                <a href={`#${aboutId})`}>About</a>
             </nav>
         );
     }
